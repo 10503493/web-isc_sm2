@@ -7,7 +7,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -22,7 +22,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 20%;
 }
 
 button:hover {
@@ -40,11 +40,38 @@ button:hover {
   margin: 24px 0 12px 0;
 }
 
-img.avatar {
-  width: 40%;
+img.login {
+  width: 10%;
   border-radius: 50%;
 }
 
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 40;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .container {
   padding: 16px;
 }
@@ -68,19 +95,20 @@ span.psw {
 </head>
 <body>
 
-<h2>Login Form</h2>
+<h2>Login Formxxxxxx</h2>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="login.png" alt="login_img" class="login">
   </div>
 
+ <div class= "split left">
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+    <label for="uname"><b>Username</b><br></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw"><b><br>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
         
     <button type="submit">Login</button>
     <label>
@@ -88,10 +116,12 @@ span.psw {
     </label>
   </div>
 
+
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
+</div>
 </form>
 
 </body>
