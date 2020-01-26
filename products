@@ -3,23 +3,7 @@
 <head>
 
 <style>
-* {
-  box-sizing: border-box;
-}
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* Style the buttons */
 .btn {
   border: none;
@@ -43,10 +27,10 @@
 
 
 div.gallery {
-  margin: 5px;
+  margin: 25px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 280px;
 }
 
 div.gallery:hover {
@@ -71,55 +55,6 @@ div.desc {
 
 <p>sdsfds dsfdsgdfsgtre jhu8h efvsdghfvyu sdjfdsbfyg sdsfds dsfdsgdfsgtre<br> jhu8h efvsdghfvyu sdjfdsbfyg sdsfds dsfdsgdfsgtre jhu8h efvsdghfvyu sdjfdsbfyg <br>sdsfds dsfdsgdfsgtre jhu8h efvsdghfvyu sdjfdsbfyg .</p>
 
-<div id="btnContainer">
-  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
-  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-
-<br>
-
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <img src="p1.jpg" alt="product idxxx" width="250" height="153">
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <img src="p1.jpg" alt="product idxxx" width="250" height="153">
-    <p>Some text..</p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
-  </div>
-</div>
-<div class="row">
-  <div class="column" style="background-color:#ccc;">
-    <h2>Column 3</h2>
-    <p>Some text..</p>
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
-  </div>
-</div>
 
 
 
@@ -143,6 +78,34 @@ div.desc {
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
 
 <div class="gallery">
   <a target="_blank" href="p1.jpg">
@@ -157,44 +120,70 @@ div.desc {
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="p1.jpg">
+    <img src="p1.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
 </div>
 
 
+
+
+
+
 <script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
+//  // Get the elements with class="column"
+// var elements = document.getElementsByClassName("column");
 
-// Declare a loop variable
-var i;
+// // Declare a loop variable
+// var i;
 
-// List View
-function listView()
- {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "100%";
-  }
-}
+// // List View
+// function listView()
+//  {
+//   for (i = 0; i < elements.length; i++) {
+//     elements[i].style.width = "100%";
+//   }
+// }
 
-// Grid View
-function gridView() 
-{
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
-  }
-}
+// // Grid View
+// function gridView() 
+// {
+//   for (i = 0; i < elements.length; i++) {
+//     elements[i].style.width = "50%";
+//   }
+// }
 
-/* Optional: Add active class to the current button (highlight it) */
-var container = document.getElementById("btnContainer");
-var btns = container.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+// /* Optional: Add active class to the current button (highlight it) */
+// var container = document.getElementById("btnContainer");
+// var btns = container.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 </script>
 
 </body>
