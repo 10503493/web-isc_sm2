@@ -3,6 +3,23 @@
 <head>
 
 <style>
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 div.subgallery
 {
   margin: 25px;
@@ -30,9 +47,10 @@ position: relative;
 </style>
 </head>
 <body>
-
-
-<div class ="detail">
+<!--  -->
+<!--  -->
+<!-- have to make it center  by div detail-->
+<div class ="detail"> 
 <div class="gallerylarge"> 
   <img src="p1.jpg" alt="Mountains" id="thumb1">
 </div>
@@ -42,8 +60,11 @@ position: relative;
   <img src="p1.jpg" alt="Mountains"width="125" height="80"  id="thumb4" onclick="imagechange3()">
   <img src="p1.jpg" alt="Mountains"width="125" height="80"  id="thumb5" onclick="imagechange4()">
 </div>
-</div> 
-
+<button type="button" class="btn">book now </button><br><br>
+<button type="button" class="btn">call </button><br>
+<button type="button" class="btn">save/remove </button><br>
+<button type="button" class="btn">compare here make this opt in cart </button><br>
+</div>
 
 
 
@@ -75,4 +96,5 @@ console.log("get4");
 </script>
 
 </body>
+
 </html>
