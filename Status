@@ -6,3 +6,6 @@ in test page each image thumbnail can be dected on click and tested in console
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@''''
 created DB called test2
 table,view and stroed procedure 
+@@@@@@@@@@@@@@@@@@@@@@@
+created users table with usr and psd 1 is usr and 11 is psd 
+now need to write code for verify pssword
