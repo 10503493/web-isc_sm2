@@ -1,52 +1,17 @@
-use test2
-CREATE TABLE MyGuests (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+USE web_ise;
+CREATE TABLE users(
+uname VARCHAR(30) PRIMARY KEY,
+pword VARCHAR(30) NOT NULL,
 firstname VARCHAR(30) NOT NULL,
 lastname VARCHAR(30) NOT NULL,
-midilename VARCHAR(30),
 email VARCHAR(50) NOT NULL,
+address VARCHAR(200) NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) 
-SELECT * FROM MyGuests
-insert into MyGuests(firstname,lastname,email)
-values('Mony','Sebin','M@o.com'),('Sony','Bastian','S@o.com'),('Rony','Binu','R@o.com');
- select distinct firstname
- from MyGuests
- delete from MyGuests where firstname ='ff'
- update MyGuests
-set lastname = 'changedddd'
-where id=3
-select * from MyGuests
-where firstname= 'tony'
+SELECT * FROM users;
+insert into users(uname,pword,firstname,lastname,email,address)
+values('1','11','mony','Sebin','M@o.com','tdpa'),('2','22','Sony','Bastian','S@o.com','mltm'),('3','33','Rony','Binu','R@o.com','ekm');
 
-DELIMITER //
- CREATE PROCEDURE GetAllUnique()
-BEGIN
- select distinct firstname 
- from MyGuests ;  
-END //
- DELIMITER ;
- call GetAllUnique();
- CREATE TABLE employe (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-fname VARCHAR(30) NOT NULL,
-lname VARCHAR(30) NOT NULL,
-email VARCHAR(50) NOT NULL,
-reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
- DELIMITER //
- CREATE PROCEDURE GetData(
-    IN PfName VARCHAR(30),
-     IN PlName VARCHAR(30),
-      IN Pemail VARCHAR(50)
-)
-BEGIN
-   insert into employe(fname , lname, email) values (pfname , plname, pemail);
-   
-END //
- DELIMITER ;
-select * from employe;
- call GetData('t3','s3','ts3@v.com');
- create view nl  as select fname,lname 
- from employe;
- select * from nl
+
+
 
