@@ -41,30 +41,32 @@ def login():
     else:
      return render_template('test1.html')
     
-@app.route('/sign_up', methods=['POST'])
+@app.route('/signup', methods=['POST'])
 def signup():
+    return render_template('sign_up.html')
+@app.route('/usercreation',methods=['POST'])
+def usercreation():    
     print ("start")
     usr = request.form.get('uname')
     psw = request.form.get('psw')
-    email = request.form.get('email')
+    email=request.form.get('Email')
     print("c=begore")
     cur = mysql.connection.cursor()
     print("after")
-    cur.execute("select * from users where uname=%s",usr.strip())
+    cur.execute("select * from users where uname=%s or email=%s",[usr,email])
     data = cur.fetchall()
     print(data)
     print ("here")
 
     if len(data) == 0:
-        cur.execute("insert into users (email,uname,pword) values (%s,%s,%s)",(email,usr,psw))
+        print("anddddd")
+        cur.execute("insert into users (uname,pword,firstname,lastname,email,address) values (%s,%s,%s,%s,%s,%s)",(usr,psw,email,usr,email,psw))
         mysql.connection.commit()
         cur.close()
         print("now")
-        return render_template('login-page.html')
+        return render_template('loginpage.html')
     else:
         cur.close()
-        return render_template('test1.html')   
-
-
+        return render_template('test1.html') 
 if __name__ == '__main__':
     app.run(debug=True)
