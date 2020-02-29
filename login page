@@ -124,7 +124,7 @@ span.psw {
 
 </div>
 </form>
-<form action="/sign_up" method="post">
+<form action="/signup" method="post">
   <div class= "split right">
  
     <div class ="container" style="background-image: url('img1.jpg');">
