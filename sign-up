@@ -99,7 +99,7 @@ span.psw {
 
 <h2>signup Formxxxxxx</h2>
 
-<form action="/sign_up" method="post">
+<form action="/usercreation" method="post">
     <div class="container">
       <label for="fname"><b>Firstname</b><br></label>
       <input type="text" placeholder="Enter Firstname" name="fname" required><br>
