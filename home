@@ -1,0 +1,25 @@
+<div class= "split">
+<div class="split left">
+    <img src="home.JPG" alt="welcome_image_home" class="login">
+</div>
+<div class="split right">
+        <p>With such a wide range of Pension and Insurance products available, <br>it makes sense to seek specialist
+            advice from an Independent Broker. <br>An Independent Broker will listen to your needs and wishes and,
+            taking your current circumstances into account, set a financial map to help you achieve these goals.
+            With decades of combined experience, our specialist financial advisers have developed an intricate
+            understanding of both the Insurance and Pension markets. They can explain your options to you in plain
+            English, and help you understand how each product will benefit you, based purely on the facts.
+            Charterhouse Private Clients Ltd trading as Clevermoney has been trading since 2006. Our staff have vast
+            experience in Insurance, Pensions, Mortgages and Financial Services, both in Ireland and in the UK.
+            The Company now has a team of experienced and skilled Financial Advisers to help you with almost any aspect
+            of Financial Planning.</p>
+
+        <button type="submit" class="button">Get In Now</button>
+        <div style="width:500px; position:relative;">
+            <iframe
+                src="https://www.mortgagecalculator.net/embeddable/v2/?size=3&textColor=2bcc4b&backgroundColor=ffffff"
+                width="100%" frameborder=0 scrolling=no height=330></iframe>
+            <a style="width: 100%;background: #075269;color: #fff;text-align: center;font-weight: bold;display: block;clear: both;padding: 3px 0;font-size: 12px;text-transform: uppercase;font-family: arial;text-decoration: none; cursor:pointer;margin-top:-26px; position:absolute;"
+                href="https://www.mortgagecalculator.net">Powered fggggggggggggg</a></div>
+</div>
+</div>
